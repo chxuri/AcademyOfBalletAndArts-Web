@@ -272,7 +272,123 @@
 
 }
 
-@keyframes fadeUp {
+.classes-preview {
+
+    padding:120px 40px;
+
+    background:#ffffff;
+
+}
+
+.section-header {
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+}
+
+
+.section-header h2 {
+
+    font-family:"Playfair Display", serif;
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+}
+
+.class-cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.class-card {
+
+    background:#fffaf7;
+
+    overflow:hidden;
+
+    transition:.3s ease;
+
+}
+
+
+.class-card img {
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+}
+
+
+.card-content {
+
+    padding:30px;
+
+}
+
+
+.card-content h3 {
+
+    font-family:"Playfair Display", serif;
+
+    font-size:1.8rem;
+
+    color:#6d4c63;
+
+}
+
+
+.card-content p {
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+
+.class-card:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.1);
+
+}
+
+@media(max-width:900px){
+
+    .class-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .section-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+}
+
+/* @keyframes fadeUp {
 
     from {
 
@@ -291,4 +407,4 @@
 
     }
 
-}
+} */
