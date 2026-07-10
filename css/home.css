@@ -1,0 +1,294 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+
+    background-image: url("../assets/images/elegant-fingers-tandu.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+    
+    padding-top: 90px;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        );
+
+    z-index: 1;
+}
+
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 700px;
+    margin-left: 8%;
+}
+
+
+.hero-subtitle {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    animation: fadeUp 1s ease;
+}
+
+
+.hero h1 {
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    line-height: 1.05;
+
+    font-family: "Playfair Display", serif;
+
+    margin-bottom: 25px;
+
+    animation: fadeUp 1s ease .2s backwards;
+}
+
+
+.hero-description {
+
+    font-size: 1.2rem;
+
+    max-width: 500px;
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+
+    animation: fadeUp 1s ease .4s backwards;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+    gap: 20px;
+
+    animation: fadeUp 1s ease .6s backwards;
+}
+
+.btn {
+
+    background: #b98b8b;
+
+    color: white;
+
+    padding: 12px 28px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+
+.btn.primary {
+
+    background: white;
+
+    color: #222;
+
+}
+
+
+.btn.primary:hover {
+
+    background: #9d6f6f;
+
+    transform: translateY(-3px);
+
+}
+
+
+.btn.secondary {
+
+    border: 1px solid white;
+
+    color: white;
+
+}
+
+
+.btn.secondary:hover {
+
+    background:white;
+
+    color:#222;
+
+}
+
+.about-preview {
+
+    padding: 120px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 80px;
+
+    background: #fffaf7;
+
+}
+
+.about-image {
+
+    flex: 1;
+
+    position: relative;
+
+}
+
+
+.about-image img {
+
+    width:100%;
+
+    height:600px;
+
+    object-fit:cover;
+
+}
+
+.about-image::after {
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border:2px solid #c9a27e;
+
+    top:25px;
+
+    left:25px;
+
+    z-index:0;
+
+}
+
+
+.about-image img {
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.about-content {
+
+    flex:1;
+
+}
+
+
+.section-label {
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:.85rem;
+
+    color:#b38b6d;
+
+    margin-bottom:20px;
+
+}
+
+
+.about-content h2 {
+
+    font-family:"Playfair Display", serif;
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+
+.about-content p {
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.text-link {
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    border-bottom:1px solid #222;
+
+    padding-bottom:5px;
+
+    transition:.3s;
+
+}
+
+
+.text-link:hover {
+
+    letter-spacing:1px;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
