@@ -186,3 +186,16 @@
     }
 
 }
+
+@media(max-width:900px){
+
+    .nav-links {
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+}
