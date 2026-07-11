@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
 
-    background-image: url("../assets/images/elegant-fingers-tandu.png");
+    background-image: url("../assets/images/ballerina-arabeque-right.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,8 +26,8 @@
 
     background:
         linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
+            rgba(0,0,0,0.30),
+            rgba(0,0,0,0.30)
         );
 
     z-index: 1;
@@ -39,9 +39,11 @@
 
     z-index:2;
 
-    max-width:1200px;
+    width:min(1400px,92%);
+    /* max-width:1200px; */
 
     margin:auto;
+
 
     padding:0 40px;
 
@@ -136,17 +138,29 @@
 
     max-width: 700px;
     margin-left: 8%;
+
+    max-width:620px;
+
+    margin-left:0;
 }
 
 
 .hero-subtitle {
-    font-size: 1rem;
+    /* font-size: 1rem;
     letter-spacing: 4px;
     text-transform: uppercase;
 
     margin-bottom: 20px;
 
-    animation: fadeUp 1s ease;
+    animation: fadeUp 1s ease; */
+
+    font-size:.85rem;
+
+    letter-spacing:6px;
+
+    color:#d4b58f;
+
+    margin-bottom:30px;
 }
 
 
@@ -166,7 +180,7 @@
 
 .hero-description {
 
-    font-size: 1.2rem;
+    /* font-size: 1.2rem;
 
     max-width: 500px;
 
@@ -174,7 +188,15 @@
 
     margin-bottom: 40px;
 
-    animation: fadeUp 1s ease .4s backwards;
+    animation: fadeUp 1s ease .4s backwards; */
+
+    max-width:520px;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.85);
+
+
 }
 
 
@@ -186,7 +208,7 @@
     animation: fadeUp 1s ease .6s backwards;
 }
 
-.btn {
+/* .btn {
 
     background: #b98b8b;
 
@@ -200,9 +222,9 @@
 
     transition: .3s ease;
 
-}
+} */
 
-
+/* 
 .btn.primary {
 
     background: white;
@@ -236,29 +258,36 @@
 
     background:white;
 
-    color:#222;
+    color:#222; 
 
-}
+}*/
 
 .about-preview {
 
-    padding: 120px 8%;
-
+    /* padding: 120px 8%; */
+    padding: 0;
+/* 
     display: flex;
 
     align-items: center;
 
     gap: 80px;
 
-    background: #fffaf7;
+    background: #fffaf7; */
+
+    position: relative;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:stretch;
 
 }
 
 .about-image {
 
     flex: 1;
-
-    position: relative;
 
 }
 
@@ -273,7 +302,7 @@
 
 }
 
-.about-image::after {
+/* .about-image::after {
 
     content:"";
 
@@ -291,20 +320,26 @@
 
     z-index:0;
 
-}
+} */
 
 
 .about-image img {
 
-    position:relative;
+    /* position:relative;
 
-    z-index:1;
+    z-index:1; */
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
 
 }
 
 .about-content {
 
-    flex:1;
+    padding:90px;
 
 }
 
@@ -376,9 +411,11 @@
 
 .classes-preview {
 
-    padding:120px 40px;
+    background:#121212;
 
-    background:#ffffff;
+    color:white;
+
+    padding:110px 0;
 
 }
 
@@ -415,15 +452,23 @@
 
     margin:auto;
 
+    
+
 }
 
 .class-card {
 
-    background:#fffaf7;
+    /* background:#fffaf7;
 
     overflow:hidden;
 
-    transition:.3s ease;
+    transition:.3s ease; */
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:0;
 
 }
 
@@ -432,16 +477,40 @@
 
     width:100%;
 
-    height:350px;
+    height:420px;
 
     object-fit:cover;
 
 }
 
+.class-card::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(0,0,0,.8)
+
+    );
+}
+
 
 .card-content {
 
-    padding:30px;
+    position:absolute;
+
+    bottom:35px;
+
+    left:30px;
+
+    color:white;
+
+    z-index:2;
 
 }
 
@@ -475,9 +544,9 @@
 
 .gallery-preview {
 
-    padding:120px 40px;
+    padding:120px 0;
 
-    background:#fffaf7;
+    background:#faf7f3;
 
 }
 
@@ -493,7 +562,8 @@
 
     grid-auto-rows:250px;
 
-    gap:25px;
+    gap:12px;
+    
 
 }
 
@@ -585,7 +655,7 @@
 
     font-size:2rem;
 
-    color:#6d4c63;
+    color:black;
 
 }
 
@@ -664,7 +734,8 @@
     border:none;
 
 
-    background:#6d4c63;
+    /* background:#6d4c63; */
+    /* color: var(--gold); */
 
 
     color:white;
@@ -681,15 +752,22 @@
 }
 
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#9b9b9b;
+
+}
+
 .contact-form button:hover {
 
-    background:#503548;
+    /* background:#503548; */
 
 }
 
 
 
-.footer {
+/* .footer {
 
     background:#6d4c63;
 
@@ -796,7 +874,7 @@
 .footer-socials a:hover {
     color: #d8b08c;
     transform: translateY(-3px);
-}
+} */
 
 /* @media(max-width:1000px){
 
@@ -912,7 +990,7 @@
 
 
     /* ---------- NAVBAR ---------- */
-
+/* 
     .navbar {
 
         padding: 15px 30px;
@@ -926,7 +1004,7 @@
 
     }
 
-
+ */
 
     /* ---------- HERO ---------- */
 
@@ -1061,7 +1139,7 @@
 
     /* ---------- FOOTER ---------- */
 
-
+/* 
     .footer-container {
 
         flex-direction: column;
@@ -1076,7 +1154,7 @@
 
         justify-content: center;
 
-    }
+    } */
 
 
 }
@@ -1104,7 +1182,7 @@
 
 
     /* ---------- NAVBAR ---------- */
-
+/* 
 
     .navbar {
 
@@ -1121,7 +1199,7 @@
 
 
     /* hamburger menu */
-
+/*
     .nav-links {
 
         width: 100%;
@@ -1131,7 +1209,7 @@
         align-items: center;
 
     }
-
+ */
 
 
 
@@ -1314,11 +1392,11 @@
     /* ---------- FOOTER ---------- */
 
 
-    .footer {
+    /* .footer {
 
         padding: 60px 25px 25px;
 
-    }
+    } */
 
 }
 
