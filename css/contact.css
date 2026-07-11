@@ -1,8 +1,12 @@
 .contact-hero{
 
-    height:60vh;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 
     background:url("../assets/images/empty-room-barre.png") center/cover;
+    background-repeat: no-repeat;
 
     position:relative;
 
@@ -13,6 +17,10 @@
     align-items:center;
 
     color:white;
+
+    padding-top: 90px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
 
 }
 
@@ -40,7 +48,8 @@
 
     font-family:"Playfair Display",serif;
 
-    font-size:clamp(3rem,6vw,5rem);
+    font-size:clamp(3rem,6vw,4.8rem);
+    margin-bottom: 15px;
 
 }
 
@@ -69,7 +78,7 @@
 
     font-size: clamp(2rem, 4vw, 3rem);
 
-    color: #6d4c63;
+    color: black;
 
     margin-bottom: 20px;
 
@@ -77,7 +86,7 @@
 
 .contact-intro p{
 
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 
     line-height: 1.8;
 
@@ -163,7 +172,7 @@
 
 .contact-item i{
 
-    color:#b98da5;
+    color:black;
 
     font-size:1.4rem;
 
@@ -220,7 +229,7 @@
     }
 
 }
-
+/* 
 @media(max-width:900px){
 
     .nav-links {
@@ -232,4 +241,4 @@
         align-items: center;
 
     }
-}
+} */

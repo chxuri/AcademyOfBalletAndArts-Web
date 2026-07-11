@@ -2,9 +2,13 @@
 
 .story-hero {
 
-    height:70vh;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 
     background-image:url("../assets/images/ubc-dancers-red.jpg");
+    background-repeat: no-repeat;
 
     background-size:cover;
 
@@ -19,6 +23,10 @@
     justify-content:center;
 
     color:white;
+
+    padding-top: 90px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
 
 }
 
@@ -54,9 +62,9 @@
 
     font-family:"Playfair Display", serif;
 
-    font-size:clamp(3rem,6vw,5rem);
+    font-size:clamp(3rem,6vw,4.8rem);
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -65,7 +73,7 @@
 
     font-size:1.2rem;
 
-    letter-spacing:2px;
+    letter-spacing:1px;
 
 }
 
@@ -123,7 +131,7 @@
 
     font-family:"Playfair Display", serif;
 
-    color:#6d4c63;
+    color:black;
 
     font-size:2.5rem;
 

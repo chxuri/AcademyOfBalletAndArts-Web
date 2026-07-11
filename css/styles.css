@@ -41,10 +41,9 @@ body{
     font-family: "Inter", sans-serif;
 
 }
+ /*h2, h3 */
 
-h1,
-h2,
-h3{
+h1, h2, h3 {
 
     /* font-family:'Cormorant Garamond',serif;
 
@@ -54,17 +53,30 @@ h3{
 
     font-family:"Playfair Display",serif;
 
-    font-size:clamp(4rem,7vw,6.5rem);
-
     line-height:.95;
 
     font-weight:500;
 
     letter-spacing:-1px;
-    
 
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size:1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color:#555;
+}
+
+.hero-subtitle {
+    color: white;
+}
 .container{
 
     width:100%;
@@ -90,6 +102,9 @@ section{
     font-size:.8rem;
 
     text-decoration: none;
+
+    margin-top: 15px;
+
 
 }
 
@@ -132,6 +147,10 @@ section{
     background:white;
 
     color:#111;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
 
 }
 
@@ -275,7 +294,7 @@ section{
 
     font-size: 2rem;
 
-    color: #6d4c63;
+    color: white;
 
     cursor: pointer;
 
@@ -816,6 +835,8 @@ section{
 
         gap: 25px;
 
+        background-color: black;
+
     }
 
 
@@ -865,6 +886,8 @@ section{
         flex-direction: column;
 
         align-items: center;
+
+        background-color: black;
 
     }
 
