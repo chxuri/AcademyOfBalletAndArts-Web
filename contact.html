@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classes | Academy of Ballet & Arts</title>
+    <title>Contact | Academy of Ballet & Arts</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,9 +16,12 @@
 
         <div class="container nav-container">
 
-            <a href="index.html" class="logo">
-                Academy of Ballet & Arts
-            </a>
+
+                <a href="index.html" class="logo">
+
+                    <img src="assets/images/new-logo-transparent.png" alt="Academy Logo">
+                    Academy of Ballet & Arts
+                </a>
 
             <nav>
 
@@ -87,19 +90,19 @@
                 <h2>Send Us a Message</h2>
 
                 <br>
-                <form>
+                <form id="contactForm">
 
-                    <input type="text"
+                    <input type="text" id="name"
                     placeholder="Your Name">
 
-                    <input type="email"
+                    <input type="email" id="email"
                     placeholder="Email Address">
 
-                    <input type="text"
+                    <input type="text" id="subject"
                     placeholder="Subject">
 
                     <textarea
-                    placeholder="Message"
+                    placeholder="Message" id="message"
                     rows="6"></textarea>
 
                     <button class="btn primary">
@@ -107,6 +110,8 @@
                         Send Message
 
                     </button>
+
+                    <p id="formStatus"></p>
 
                 </form>
 
@@ -146,7 +151,9 @@
 
                         <strong>Phone</strong>
 
-                        <p>(847) 537-6868</p>
+                        <a href="tel:+18475376868">
+                        (847) 537-6868
+                    </a>
 
                     </div>
 
@@ -162,7 +169,9 @@
 
                         <strong>Email</strong>
 
-                        <p>bellevinson@gmail.com</p>
+                        <a href="mailto:bellelevinson@gmail.com">
+                       bellevinson@gmail.com
+                    </a>
 
                     </div>
 
@@ -180,9 +189,9 @@
 
                         <p>
 
-                            Mon–Fri: 4:00–8:30 PM<br>
+                            Mon-Fri: 7:00 AM - 8:30 PM<br>
 
-                            Saturday: 9:00–1:00
+                            Sat-Sun: 9:00 AM - 4:00 PM
 
                         </p>
 
@@ -229,17 +238,23 @@
 
 
 
-    <footer class="footer">
+   <footer class="footer">
 
 
         <div class="footer-container">
 
 
-            <div class="footer-brand">
+            <div class="footer-brand footer-column">
 
-                <h3>
-                    Academy of Ballet & Arts
-                </h3>
+                <div class="footer-logo">
+
+                    <img src="assets/images/new-logo-transparent.png" alt="Academy Logo">
+
+                    <h3>
+                        Academy of Ballet & Arts
+                    </h3>
+
+                </div>
 
 
                 <p>
@@ -252,7 +267,7 @@
 
 
 
-            <div class="footer-links">
+            <div class="footer-links footer-column">
 
                 <h4>
                     Explore
@@ -276,7 +291,10 @@
 
             </div>
 
-            <div class="footer-contact">
+
+
+
+            <div class="footer-contact footer-column">
 
                 <h4>
                     Contact
@@ -285,22 +303,28 @@
                     <a href="https://www.facebook.com/wheelingballet/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.google.com/maps?cid=13381545169441662312" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i></a>
                 </div>
-                <p>
-                    254 McHenry Rd,<br>Wheeling, IL 60090
-                </p>
+                <div class="academy-footer-info footer-links">
+                    <br>
+                    <p>
+                        254 McHenry Rd,<br>Wheeling, IL 60090
+                    </p>
+                    <br>
 
-                <p>
-                    (847) 537-6868
-                </p>
+                    <a href="tel:+18475376868">
+                        (847) 537-6868
+                    </a>
 
-                <p>
-                    bellevinson@gmail.com
-                </p>
+                    <a href="mailto:bellelevinson@gmail.com">
+                        bellevinson@gmail.com
+                    </a>
+                </div>
 
             </div>
 
 
         </div>
+
+
 
         <div class="footer-bottom">
 
@@ -313,6 +337,12 @@
 
 
     </footer>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script src="js/contact.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

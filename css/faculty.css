@@ -68,6 +68,8 @@
 
 .faculty-hero p{
     font-size:1.2rem;
+
+    margin: 0 15px;
 }
 
 .director-section {
@@ -128,6 +130,8 @@
 
     color:black;
 
+    margin: 5px 0;
+
 }
 
 .faculty-grid-section {
@@ -185,6 +189,13 @@
 .faculty-card-text {
 
     padding:25px;
+
+}
+
+.faculty-card-text p{
+
+    color: var(--gold);
+    margin-top: 5px;
 
 }
 

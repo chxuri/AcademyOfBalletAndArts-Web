@@ -682,12 +682,35 @@
 }
 
 
-.contact-info p, 
-.contact-info a{
+.contact-info p {
 
     line-height:1.6;
 
     color:#555;
+
+    font-size: 1.2rem;
+
+}
+
+.contact-details p{
+     color:#555;
+}
+
+
+#formStatus{
+
+    margin-top:20px;
+
+    color:#c4a06d;
+
+    font-weight:500;
+
+}
+.contact-info a{
+
+    line-height:1.6;
+
+     color:#555;
 
     font-size: 1.2rem;
 

@@ -53,6 +53,10 @@
 
 }
 
+.gallery-hero p {
+    font-size: 1.2rem;
+}
+
 .gallery-intro{
 
     max-width:800px;
@@ -99,7 +103,7 @@
 
 .gallery-page{
 
-    padding:0 40px 100px;
+    padding:0 40px 50px;
 
 }
 

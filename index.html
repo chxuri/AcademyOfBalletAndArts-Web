@@ -344,31 +344,33 @@
             </div>
 
 
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
 
                 <input 
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your Name" id="name" required
                 >
 
                 <input
                     type="email"
-                    placeholder="Email Address"
+                    placeholder="Email Address" id="email" required
                 >
 
                 <input
                     type="text"
-                    placeholder="Phone Number"
+                    placeholder="Subject" id="subject"
                 >
 
                 <textarea
-                    placeholder="Your Message">
-                </textarea>
+                    placeholder="Message" id="message"
+                    rows="6"></textarea>
 
 
                 <button type="submit" class="btn primary">
                     Send Message
                 </button>
+
+                <p id="formStatus"></p>
 
 
             </form>
@@ -479,7 +481,11 @@
 
 
     </footer>
+<script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 
+<script src="js/contact.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
