@@ -41,7 +41,7 @@
 
                     <li><a href="story.html">Our Story</a></li>
 
-                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="faculty.html" class="active">Faculty</a></li>
 
                     <li><a href="classes.html">Classes</a></li>
 
@@ -164,6 +164,10 @@
                 <p>
                     Ballet • Artistic Dance
                 </p>
+
+                <button class="btn primary bio-btn" data-teacher="pervana">
+                    View Bio
+                </button>
 
 
             </div>
@@ -291,6 +295,23 @@
 
 </div> -->
 
+<div id="teacherModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <img id="modalImg" src="" alt="">
+
+        <h2 id="modalName"></h2>
+
+        <h4 id="modalTitle"></h4>
+
+        <p id="modalBio"></p>
+
+    </div>
+
+</div>
 
 
 <footer class="footer">
@@ -395,6 +416,7 @@
 
 
 <script src="js/script.js"></script>
+<script src="js/faculty.js"></script>
 </body>
 
 </html>

@@ -263,6 +263,10 @@ section{
 
 }
 
+.nav-links a.active {
+    color: var(--gold);
+}
+
 .logo{
 
     display:flex;

@@ -9,6 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
+
     display: flex;
     align-items: center;
 
@@ -57,49 +58,114 @@
     box-sizing:border-box;
 
 }
-.achievement-card{
 
-    background:rgba(255,250,247,0.85);
 
-    z-index: 3;
-
-    backdrop-filter:blur(12px);
-
-    padding:35px;
-
-    margin: 35px;
-    margin-left: 100px;
-
-    width:500px;
-
-    border-radius:24px;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-    max-width: 100%;
-    box-sizing: border-box;
-    align-self: flex-start;
-}
-
-.achievement-label{
+/* .achievement-label{
 
     font-family:"Playfair Display", serif;
 
     font-size:1.3rem;
 
-    color:#6d4c63;
+    color:#ffffff;
 
-    margin-bottom:25px;
+    margin-top: 15px;
+    margin-bottom:10px;
 
     font-weight:600;
 
+} */
+
+.achievements{
+    background:#121212;
+    padding:110px 0;
+    overflow:hidden;
 }
-.achievement-card ul{
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+.section-title{
+    margin-top: 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    flex:1;
+    max-width:220px;
+    height:1px;
+    background:var(--gold);
+}
+
+.section-title p{
+    margin:0;
+    color:var(--gold);
+    letter-spacing:5px;
+    font-size:.82rem;
+    /* font-family:sans-serif; */
+}
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+}
+
+.achievement-card{
+    text-align:center;
+    padding:10px 30px;
+    position:relative;
+}
+
+.achievement-card:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:15%;
+    height:70%;
+    width:1px;
+    background:var(--gold);
+}
+
+.icon{
+    font-size:2rem;
+    color:var(--gold);
+    margin-bottom:18px;
+}
+
+.achievement-card h2{
+    color:var(--gold);
+    font-size:2rem;
+    margin-bottom:10px;
+    /* font-family:"Cormorant Garamond",serif; */
+    font-weight:500;
+    letter-spacing: -1px;
+}
+
+.achievement-card p{
+    color: white;
+    font-size:0.8rem;
+    line-height:1.8;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    opacity:.85;
+    max-width:150px;
+    margin:auto;
+}
+
+
+
+/* .achievement-card ul{
 
     list-style:none;
 
     padding:0;
 
-    /* margin:0; */
+    /* margin:0; 
 
 }
 
@@ -111,9 +177,9 @@
 
     margin-bottom:10px;
 
-    color:#555;
+    color:var(--gold);
 
-    line-height:1.6;
+    line-height:1.4;
 
 }
 
@@ -129,7 +195,7 @@
 
     font-size:1rem;
 
-}
+} */
 
 .hero-content {
     position: relative;
@@ -139,7 +205,7 @@
     max-width: 700px;
     margin-left: 8%;
 
-    max-width:620px;
+    max-width:600px;
 
     margin-left:0;
 }
@@ -416,7 +482,7 @@
 
     color:white;
 
-    padding:110px 0;
+    padding:70px 0;
 
 }
 
@@ -818,6 +884,22 @@
 }
 
 
+.divider{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:220px;
+    height: 1px;
+
+    margin-top: 25px;
+    background: var(--gold);
+
+
+} 
+
+
 
 /* .footer {
 
@@ -1120,17 +1202,7 @@
 
 
 
-    /* Achievement card */
 
-    .achievement-card {
-
-        width: 400px;
-
-        max-width: 100%;
-
-        text-align: left;
-
-    }
 
 
 
@@ -1211,6 +1283,17 @@
 
 }
 
+.achievement-divider{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
+
+.achievement-divider span{
+    width:180px;
+    height:1px;
+    background:var(--gold);
+}
 
 
 
@@ -1221,6 +1304,28 @@
 
     /* ---------- GLOBAL ---------- */
 
+    .hero {
+        background-image: url("../assets/images/comforting-dark-ballet.png");
+    }
+
+    .hero-subtitle {
+        color: white;
+        margin: 10px 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+
+        background:
+            linear-gradient(
+                rgba(0,0,0,0.60),
+                rgba(0,0,0,0.60)
+            );
+
+        z-index: 1;
+    }
+
 
     section {
 
@@ -1228,6 +1333,18 @@
 
         padding-right: 25px;
 
+    }
+
+    /* .achievement-label {
+        margin-top: 5px;
+    }
+
+    .achievement-card li {
+        color: white;
+    } */
+
+    .ac {
+        margin-bottom: 10px;
     }
 
 
@@ -1342,11 +1459,11 @@
     /* Achievement card */
 
 
-    .achievement-card {
+    /* .achievement-card {
 
         width: 100%;
 
-        padding: 25px;
+        /* padding: 25px; 
 
         border-radius: 20px;
 
@@ -1355,7 +1472,7 @@
     }
 
 
-    .achievement-label {
+     .achievement-label {
 
         font-size: 1.2rem;
 
@@ -1368,7 +1485,7 @@
 
         margin-bottom: 15px;
 
-    }
+    } */ 
 
 
 
@@ -1456,6 +1573,72 @@
    STACKING RESPONSIVE ADJUSTMENTS
 ========================================== */
 
+@media (max-width:991px){
+
+    .achievements{
+        padding:90px 0;
+    }
+
+    .achievement-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px 0;
+    }
+
+    .achievement-card:nth-child(2)::after{
+        display:none;
+    }
+
+    .achievement-card:nth-child(4)::after{
+        display:none;
+    }
+
+    .achievement-card::after{
+        height:60%;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .achievements{
+        padding:70px 0;
+    }
+
+    .section-title{
+        margin-bottom:50px;
+    }
+
+    .section-title span{
+        max-width:70px;
+    }
+
+    .section-title p{
+        font-size:.72rem;
+        letter-spacing:3px;
+    }
+
+    .achievement-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .achievement-card{
+        padding:0;
+    }
+
+    .achievement-card::after{
+        display:none;
+    }
+
+    .achievement-card h2{
+        font-size:2.2rem;
+    }
+
+    .achievement-card p{
+        max-width:none;
+    }
+
+}
 
 /* Hero: Achievement card stacks */
 @media (max-width: 900px) {
@@ -1473,11 +1656,11 @@
     }
 
 
-    .achievement-card {
+    /* .achievement-card {
 
         width: min(90%, 420px);
 
-    }
+    } */
 
 }
 

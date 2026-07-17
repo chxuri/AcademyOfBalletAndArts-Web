@@ -1,13 +1,13 @@
-const faculty = {
+const teachers = {
 
 
     pervana: {
 
         name: "Pervana Myradova",
 
-        role: "Artistic Director",
+        title: "Artistic Director",
 
-        image: "assets/images/pervana-pic.jpg",
+        img: "assets/images/pervana-pic.jpg",
 
         bio: `
         Belle Vinson has dedicated her career to
@@ -20,51 +20,44 @@ const faculty = {
     },
 
 
-    teacher1: {
-
-        name:"Instructor Name",
-
-        role:"Ballet Instructor",
-
-        image:"assets/images/teacher1.jpg",
-
-        bio:`
-        Instructor biography goes here.
-        `
-
-    }
-
 
 };
 
 
 
-function openBio(person){
+const modal = document.getElementById("teacherModal");
+const buttons = document.querySelectorAll(".bio-btn");
 
 
-    const teacher = faculty[person];
+buttons.forEach(button => {
 
+    button.addEventListener("click", () => {
 
-    document.getElementById("bioImage").src = teacher.image;
+        const teacher = teachers[button.dataset.teacher];
 
-    document.getElementById("bioName").innerHTML = teacher.name;
+        document.getElementById("modalImg").src = teacher.img;
+        document.getElementById("modalName").textContent = teacher.name;
+        document.getElementById("modalTitle").textContent = teacher.title;
+        document.getElementById("modalBio").textContent = teacher.bio;
 
-    document.getElementById("bioRole").innerHTML = teacher.role;
+        modal.style.display = "flex";
 
-    document.getElementById("bioText").innerHTML = teacher.bio;
+    });
 
+});
 
-    document.getElementById("bioModal")
-    .style.display="flex";
+document.querySelector(".close").addEventListener("click",()=>{
 
+    modal.style.display="none";
 
-}
+});
 
+window.addEventListener("click",(e)=>{
 
+    if(e.target===modal){
 
-function closeBio(){
+        modal.style.display="none";
 
-    document.getElementById("bioModal")
-    .style.display="none";
+    }
 
-}
+});
