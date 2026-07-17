@@ -96,7 +96,7 @@
 
         <div class="director-image">
 
-            <img src="assets/images/bella-pic.jpg"
+            <img src="assets/images/bella-resume-pic.jpg"
             alt="Academy Director">
 
         </div>
@@ -107,7 +107,7 @@
 
 
             <p class="section-label">
-                Artistic Director
+                Director
             </p>
 
 
@@ -119,6 +119,10 @@
             <p>
                 Bachelor of fine arts in ballet, University of Utah, performed with professional children, Belarussian State Dance Ensemble, studied ballet under famous ballet teacher Eleonora Vlasovaneed to fulfill her dance goals.
             </p>
+
+            <button class="btn primary bio-btn" data-teacher="bella">
+                    View Bio
+            </button>
 
 
         </div>
@@ -177,7 +181,7 @@
 
 
 
-        <div class="faculty-card">
+        <!-- <div class="faculty-card">
 
 
             <img src="assets/images/hrachya.jpg"
@@ -200,7 +204,7 @@
             </div>
 
 
-        </div>
+        </div> -->
 
 
 
@@ -221,8 +225,12 @@
 
 
                 <p>
-                    Ballet • Contemporary Dance
+                    Contemporary Dance • Choreography
                 </p>
+
+                <button class="btn primary bio-btn" data-teacher="alyssa">
+                    View Bio
+                </button>
 
 
             </div>
@@ -232,7 +240,7 @@
 
 
 
-        <div class="faculty-card">
+        <div class="faculty-card" id="amara">
 
 
             <img src="assets/images/amara-pic.jpg"
@@ -250,6 +258,10 @@
                 <p>
                     Contemporary Dance
                 </p>
+
+                <button class="btn primary bio-btn" data-teacher="amara">
+                    View Bio
+                </button>
 
 
             </div>
@@ -300,7 +312,8 @@
     <div class="modal-content">
 
         <span class="close">&times;</span>
-
+        
+        <div class="modal-body">
         <img id="modalImg" src="" alt="">
 
         <h2 id="modalName"></h2>
@@ -308,6 +321,7 @@
         <h4 id="modalTitle"></h4>
 
         <p id="modalBio"></p>
+        </div>
 
     </div>
 
@@ -323,7 +337,6 @@
             <div class="footer-brand footer-column">
 
                 <div class="footer-logo">
-
                     <img src="assets/images/final-logo-version.png" alt="Academy Logo">
 
                     <h3>

@@ -7,7 +7,7 @@
     overflow: hidden;
     position: relative;
 
-    background-image:url("../assets/images/cat-girls.jpg");
+    background-image:url("../assets/images/even-more-bg.png");
     background-repeat: no-repeat;
 
     background-size:cover;
@@ -130,7 +130,7 @@
 
     color:black;
 
-    margin: 5px 0;
+    margin: 10px 0;
 
 }
 
@@ -221,16 +221,39 @@
     z-index: 999;
 }
 
+#modalName {
+    margin-bottom: 10px;
+}
+
+#modalTitle {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
 .modal-content {
 
-    width: min(700px,90%);
+    width: min(900px,90%);
     background: white;
     border-radius: 20px;
-    padding: 40px;
+    padding: 25px;
+
+    max-height: 70vh; 
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
 
     position: relative;
 
     animation: popup .3s ease;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+
+#modalBio {
+    white-space: pre-line;
 }
 
 .close{
